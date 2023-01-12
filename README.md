@@ -40,7 +40,6 @@
 （-j 后面是线程数，第一次编译推荐用单线程）
 
    ```
-   bash
    make download -j8
    find dl -size -1024c -exec ls -l {} \;
    #find dl -size -1024c -exec rm -f {} \; | make download  #列出下载不完整的文件，如果存在这样的文件将它们删除，然后重新下载并反复检查
