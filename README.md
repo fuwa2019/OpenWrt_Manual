@@ -104,7 +104,7 @@
 
 2.软件包目录
 
-  **openwrt/package/lean/软件包名***
+  **`openwrt/package/lean/软件包名`**
 
 3.编译ipk
 
