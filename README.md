@@ -32,18 +32,7 @@
     package/lean/default-settings/files/zzz-default-settings#第51行左右改名字 Fuwa@yyyymmdd
     package/base-files/files/etc/banner#自定义ssh欢迎界面```
     
-    ```
-    
- ________ ___  ___  ___       __   ________     
-|\  _____\\  \|\  \|\  \     |\  \|\   __  \    
-\ \  \__/\ \  \\\  \ \  \    \ \  \ \  \|\  \   
- \ \   __\\ \  \\\  \ \  \  __\ \  \ \   __  \  
-  \ \  \_| \ \  \\\  \ \  \|\__\_\  \ \  \ \  \ 
-   \ \__\   \ \_______\ \____________\ \__\ \__\
-    \|__|    \|_______|\|____________|\|__|\|__|
-                                                
-                                                
-```
+    [定制网址](http://patorjk.com/software/taag/#p=display&v=3&f=3D-ASCII&t=Fuwa)
 
 6. 下载 dl 库，编译固件
 （-j 后面是线程数，第一次编译推荐用单线程）
