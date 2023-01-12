@@ -112,10 +112,11 @@
   make package/lean/软件包名/compile V=s
   ```
   
-  完成路径**openwrt/bin/packages/x86_64/base/软件包名.ipk**
+  完成路径
+  **`openwrt/bin/packages/x86_64/base/软件包名.ipk`**
   
 4.安装&更新
-  软件包-过滤器-查找-移除旧版-文件传输-上传ipk-TTYD终端
+  **软件包-过滤器-查找-移除旧版-文件传输-上传ipk-TTYD终端**
   
   ```
   cd /temp/upload
