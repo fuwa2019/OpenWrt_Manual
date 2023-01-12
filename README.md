@@ -27,7 +27,25 @@
    make menuconfig
    ```
 
-4. 下载 dl 库，编译固件
+4. 自定义
+    ```vi package/base-files/files/bin/config_generate#第150行左右改ip
+    package/lean/default-settings/files/zzz-default-settings#第51行左右改名字 Fuwa@yyyymmdd
+    package/base-files/files/etc/banner#自定义ssh欢迎界面```
+    
+    ```
+    
+ ________ ___  ___  ___       __   ________     
+|\  _____\\  \|\  \|\  \     |\  \|\   __  \    
+\ \  \__/\ \  \\\  \ \  \    \ \  \ \  \|\  \   
+ \ \   __\\ \  \\\  \ \  \  __\ \  \ \   __  \  
+  \ \  \_| \ \  \\\  \ \  \|\__\_\  \ \  \ \  \ 
+   \ \__\   \ \_______\ \____________\ \__\ \__\
+    \|__|    \|_______|\|____________|\|__|\|__|
+                                                
+                                                
+```
+
+6. 下载 dl 库，编译固件
 （-j 后面是线程数，第一次编译推荐用单线程）
 
    ```bash
