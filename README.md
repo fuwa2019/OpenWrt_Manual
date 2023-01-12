@@ -95,15 +95,18 @@
 3. 编译
   ```make -j$(nproc) || make -j1 || make -j1 V=s```
 
-##单独编译ipk
+## 单独编译ipk
 1.更新git包、编译内核
+
   ```git pull
   make target/linux/compile V=s```
 
 2.软件包目录
+
   **openwrt/package/lean/软件包名***
 
 3.编译ipk
+
   ```make package/lean/软件包名/compile V=s```
   
   完成路径**openwrt/bin/packages/x86_64/base/软件包名.ipk**
