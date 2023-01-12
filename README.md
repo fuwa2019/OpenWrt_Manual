@@ -5,7 +5,7 @@
 
 2. 安装编译依赖
 
-   ```bash
+   ```
    sudo apt update -y
    sudo apt full-upgrade -y
    sudo apt install -y ack antlr3 aria2 asciidoc autoconf automake autopoint binutils bison build-essential \
@@ -19,7 +19,6 @@
 3. 下载源代码，更新 feeds 并选择配置
 
    ```
-   bash
    git clone https://github.com/coolsnowwolf/lede openwrt
    cd openwrt
    echo "src-git ssrp https://github.com/fw876/helloworld.git" >> ./feeds.conf.default
