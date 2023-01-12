@@ -97,8 +97,8 @@
 
 ## 单独编译ipk
 1.更新git包、编译内核
-
-  ```git pull
+  ```
+  git pull
   make target/linux/compile V=s```
 
 2.软件包目录
