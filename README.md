@@ -18,7 +18,8 @@
 
 3. 下载源代码，更新 feeds 并选择配置
 
-   ```bash
+   ```
+   bash
    git clone https://github.com/coolsnowwolf/lede openwrt
    cd openwrt
    echo "src-git ssrp https://github.com/fw876/helloworld.git" >> ./feeds.conf.default
@@ -28,16 +29,19 @@
    ```
 
 4. 自定义
-    ```vi package/base-files/files/bin/config_generate#第150行左右改ip
+    ```
+    vi package/base-files/files/bin/config_generate#第150行左右改ip
     package/lean/default-settings/files/zzz-default-settings#第51行左右改名字 Fuwa@yyyymmdd
-    package/base-files/files/etc/banner#自定义ssh欢迎界面```
+    package/base-files/files/etc/banner#自定义ssh欢迎界面
+    ```
     
     [定制网址](http://patorjk.com/software/taag/#p=display&v=3&f=3D-ASCII&t=Fuwa)
 
 6. 下载 dl 库，编译固件
 （-j 后面是线程数，第一次编译推荐用单线程）
 
-   ```bash
+   ```
+   bash
    make download -j8
    find dl -size -1024c -exec ls -l {} \;
    #find dl -size -1024c -exec rm -f {} \; | make download  #列出下载不完整的文件，如果存在这样的文件将它们删除，然后重新下载并反复检查
@@ -46,7 +50,8 @@
  
 ## 再次编译：
 1. 更新
- ```sudo sh -c "apt update && apt upgrade -y"
+ ```
+ sudo sh -c "apt update && apt upgrade -y"
  git pull
  ./scripts/feeds update -a
  ./scripts/feeds install -a
