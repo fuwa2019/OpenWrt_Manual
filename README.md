@@ -99,7 +99,8 @@
 1.更新git包、编译内核
   ```
   git pull
-  make target/linux/compile V=s```
+  make target/linux/compile V=s
+  ```
 
 2.软件包目录
 
@@ -107,16 +108,20 @@
 
 3.编译ipk
 
-  ```make package/lean/软件包名/compile V=s```
+  ```
+  make package/lean/软件包名/compile V=s
+  ```
   
   完成路径**openwrt/bin/packages/x86_64/base/软件包名.ipk**
   
 4.安装&更新
   软件包-过滤器-查找-移除旧版-文件传输-上传ipk-TTYD终端
   
-  ```cd /temp/upload
+  ```
+  cd /temp/upload
   ls
-  opkg install 软件包名.ipk```
+  opkg install 软件包名.ipk
+  ```
   
   **可以用tab补全**
   
