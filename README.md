@@ -22,6 +22,7 @@
    git clone https://github.com/coolsnowwolf/lede openwrt
    cd openwrt
    git clone https://github.com/sirpdboy/luci-app-partexp.git package/luci-app-partexp
+   git clone https://github.com/sirpdboy/netspeedtest.git package/netspeedtest
    sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
    echo "src-git ssrp https://github.com/fw876/helloworld.git" >> ./feeds.conf.default
    ./scripts/feeds update -a
