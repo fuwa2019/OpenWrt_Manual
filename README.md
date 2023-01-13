@@ -21,6 +21,8 @@
    ```
    git clone https://github.com/coolsnowwolf/lede openwrt
    cd openwrt
+   git clone https://github.com/sirpdboy/luci-app-partexp.git package/luci-app-partexp
+   sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
    echo "src-git ssrp https://github.com/fw876/helloworld.git" >> ./feeds.conf.default
    ./scripts/feeds update -a
    ./scripts/feeds install -a
@@ -45,7 +47,7 @@
 （-j 后面是线程数，第一次编译推荐用单线程）
 
    ```
-   make download -j8
+   make download -j12
    find dl -size -1024c -exec ls -l {} \;
    
    #find dl -size -1024c -exec rm -f {} \; | make download
