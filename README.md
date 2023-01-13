@@ -53,7 +53,7 @@
    
    make V=s -j1
    
-   make -j$(nproc) || make -j1 || make -j1 V=s
+   #make -j$(nproc) || make -j1 || make -j1 V=s
    #自信
    ```
  
