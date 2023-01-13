@@ -29,9 +29,14 @@
 
 4. 自定义
     ```
-    vi package/base-files/files/bin/config_generate#第150行左右改ip
-    vi package/lean/default-settings/files/zzz-default-settings#第51行左右改名字 Fuwa@yyyymmdd
-    vi package/base-files/files/etc/banner#自定义ssh欢迎界面
+    vi package/base-files/files/bin/config_generate
+    #第150行左右改ip
+    
+    vi package/lean/default-settings/files/zzz-default-settings
+    #第51行左右改名字 Fuwa@yyyymmdd
+    
+    vi package/base-files/files/etc/banner
+    #自定义ssh欢迎界面
     ```
     
     [定制网址](http://patorjk.com/software/taag/#p=display&v=3&f=3D-ASCII&t=Fuwa)
@@ -42,7 +47,10 @@
    ```
    make download -j8
    find dl -size -1024c -exec ls -l {} \;
-   #find dl -size -1024c -exec rm -f {} \; | make download  #列出下载不完整的文件，如果存在这样的文件将它们删除，然后重新下载并反复检查
+   
+   #find dl -size -1024c -exec rm -f {} \; | make download
+   #列出下载不完整的文件，如果存在这样的文件将它们删除，然后重新下载并反复检查
+   
    make V=s -j1
    ```
  
