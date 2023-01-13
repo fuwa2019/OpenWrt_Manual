@@ -35,13 +35,13 @@
     ```
     
     ```
-    echo "    ___       ___       ___       ___   " >> ./package/base-files/files/etc/banner
-echo "   /\  \     /\__\     /\__\     /\  \  " >> ./package/base-files/files/etc/banner
-echo "  /::\  \   /:/ _/_   /:/\__\   /::\  \ " >> ./package/base-files/files/etc/banner >> ./package/base-files/files/etc/banner
-echo " /::\:\__\ /:/_/\__\ /:/:/\__\ /::\:\__\" >> ./package/base-files/files/etc/banner
-echo " \/\:\/__/ \:\/:/  / \::/:/  / \/\::/  /" >> ./package/base-files/files/etc/banner
-echo "    \/__/   \::/  /   \::/  /    /:/  / " >> ./package/base-files/files/etc/banner
-echo "             \/__/     \/__/     \/__/  " >> ./package/base-files/files/etc/banner
+   echo "    ___       ___       ___       ___   " >> ./package/base-files/files/etc/banner
+   echo "   /\  \     /\__\     /\__\     /\  \  " >> ./package/base-files/files/etc/banner
+   echo "  /::\  \   /:/ _/_   /:/\__\   /::\  \ " >> ./package/base-files/files/etc/banner >> ./package/base-files/files/etc/banner
+   echo " /::\:\__\ /:/_/\__\ /:/:/\__\ /::\:\__\" >> ./package/base-files/files/etc/banner
+   echo " \/\:\/__/ \:\/:/  / \::/:/  / \/\::/  /" >> ./package/base-files/files/etc/banner
+   echo "    \/__/   \::/  /   \::/  /    /:/  / " >> ./package/base-files/files/etc/banner
+   echo "             \/__/     \/__/     \/__/  " >> ./package/base-files/files/etc/banner
 ```
     
     [定制网址](http://patorjk.com/software/taag/#p=display&v=3&f=3D-ASCII&t=Fuwa)
