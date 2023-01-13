@@ -30,8 +30,8 @@
 4. 自定义
     ```
     vi package/base-files/files/bin/config_generate#第150行左右改ip
-    package/lean/default-settings/files/zzz-default-settings#第51行左右改名字 Fuwa@yyyymmdd
-    package/base-files/files/etc/banner#自定义ssh欢迎界面
+    vi package/lean/default-settings/files/zzz-default-settings#第51行左右改名字 Fuwa@yyyymmdd
+    vi package/base-files/files/etc/banner#自定义ssh欢迎界面
     ```
     
     [定制网址](http://patorjk.com/software/taag/#p=display&v=3&f=3D-ASCII&t=Fuwa)
@@ -96,7 +96,10 @@
 
 
 3. 编译
-  ```make -j$(nproc) || make -j1 || make -j1 V=s```
+
+  ```
+  make -j$(nproc) || make -j1 || make -j1 V=s
+  ```
 
 ## 单独编译ipk
 1.更新git包、编译内核
