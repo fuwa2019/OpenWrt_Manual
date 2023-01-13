@@ -34,6 +34,16 @@
     vi package/base-files/files/etc/banner#自定义ssh欢迎界面
     ```
     
+    ```
+    echo "    ___       ___       ___       ___   " >> ./package/base-files/files/etc/banner
+echo "   /\  \     /\__\     /\__\     /\  \  " >> ./package/base-files/files/etc/banner
+echo "  /::\  \   /:/ _/_   /:/\__\   /::\  \ " >> ./package/base-files/files/etc/banner >> ./package/base-files/files/etc/banner
+echo " /::\:\__\ /:/_/\__\ /:/:/\__\ /::\:\__\" >> ./package/base-files/files/etc/banner
+echo " \/\:\/__/ \:\/:/  / \::/:/  / \/\::/  /" >> ./package/base-files/files/etc/banner
+echo "    \/__/   \::/  /   \::/  /    /:/  / " >> ./package/base-files/files/etc/banner
+echo "             \/__/     \/__/     \/__/  " >> ./package/base-files/files/etc/banner
+```
+    
     [定制网址](http://patorjk.com/software/taag/#p=display&v=3&f=3D-ASCII&t=Fuwa)
 
 6. 下载 dl 库，编译固件
