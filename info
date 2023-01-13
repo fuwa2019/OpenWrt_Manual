@@ -30,3 +30,7 @@ cat << EOF > openwrt/package/base-files/files/etc/banner
                                              
 
 EOF
+
+#6. 
+echo "chmod 0775 /etc/init.d/lucky" >> ./package/base-files/files/etc/rc.local
+sed -i 2a\chmod 0775 /etc/init.d/lucky package/base-files/files/etc/rc.local
