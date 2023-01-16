@@ -1,36 +1,37 @@
-#!/bin/bash
-#=================================================
-# Description: DIY script
-# Lisence: MIT
-# Author: eSirPlayground
-# Youtube Channel: https://goo.gl/fvkdwm 
-#=================================================
+echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
+echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
+
+
+
+
 #1. Modify default IP
-sed -i 's/192.168.1.1/192.168.6.1/g' openwrt/package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.6.1/g' package/base-files/files/bin/config_generate
 
 #2. Clear the login password
-sed -i 's/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.//g' openwrt/package/lean/default-settings/files/zzz-default-settings
+sed -i 's/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.//g' package/lean/default-settings/files/zzz-default-settings
 
 #3. Replace with JerryKuKu’s Argon
-#rm openwrt/package/lean/luci-theme-argon -rf
+#rm package/lean/luci-theme-argon -rf
 
 #4. Modify the system name
-sed -i 's/OpenWrt /Fuwa@20230113 OpenWrt /g' openwrt/package/lean/default-settings/files/zzz-default-settings
+sed -i 's/OpenWrt /Fuwa@20230113 OpenWrt /g' package/lean/default-settings/files/zzz-default-settings
 
 #5. Customize ssh welcome message
-cat /dev/null > openwrt/package/base-files/files/etc/banner
+cat /dev/null > package/base-files/files/etc/banner
 
-cat << EOF > openwrt/package/base-files/files/etc/banner
-
+cat << EOF > package/base-files/files/etc/banner
  ______   __  __     __     __     ______    
 /\  ___\ /\ \/\ \   /\ \  _ \ \   /\  __ \   
 \ \  __\ \ \ \_\ \  \ \ \/ ".\ \  \ \  __ \  
  \ \_\    \ \_____\  \ \__/".~\_\  \ \_\ \_\ 
   \/_/     \/_____/   \/_/   \/_/   \/_/\/_/ 
                                              
-
 EOF
 
 #6. 
-echo "chmod 0775 /etc/init.d/lucky" >> ./package/base-files/files/etc/rc.local
-sed -i 2a\chmod 0775 /etc/init.d/lucky package/base-files/files/etc/rc.local
+cat << EOF > package/base-files/files/etc/rc.local
+# Put your custom commands here that should be executed once
+# the system init finished. By default this file does nothing.
+chmod 0775 /etc/init.d/lucky 
+exit 0
+EOF
