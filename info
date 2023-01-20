@@ -28,5 +28,6 @@ cat << EOF > package/base-files/files/etc/rc.local
 # the system init finished. By default this file does nothing.
 chmod 0775 /etc/init.d/lucky 
 chmod 0775 /usr/bin/AdGuardHome/AdGuardHome
+rm -f /etc/init.d/adguardhome
 exit 0
 EOF
