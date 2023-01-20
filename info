@@ -27,6 +27,6 @@ cat << EOF > package/base-files/files/etc/rc.local
 # Put your custom commands here that should be executed once
 # the system init finished. By default this file does nothing.
 chmod 0775 /etc/init.d/lucky 
-chmod 7777 /usr/bin/AdGuardHome/AdGuardHome
+chmod 0775 /usr/bin/AdGuardHome/AdGuardHome
 exit 0
 EOF
