@@ -21,26 +21,18 @@
    ```
    git clone https://github.com/coolsnowwolf/lede openwrt
    cd openwrt
-   git clone https://github.com/sirpdboy/luci-app-partexp.git package/luci-app-partexp
    git clone https://github.com/sirpdboy/netspeedtest.git package/netspeedtest
    sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
-   echo "src-git ssrp https://github.com/fw876/helloworld.git" >> ./feeds.conf.default
+   sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
+   git pull
    ./scripts/feeds update -a
    ./scripts/feeds install -a
    make menuconfig
    ```
 
 4. 自定义
-    ```
-    vi package/base-files/files/bin/config_generate
-    #第150行左右改ip
-    
-    vi package/lean/default-settings/files/zzz-default-settings
-    #第51行左右改名字 Fuwa@yyyymmdd
-    
-    vi package/base-files/files/etc/banner
-    #自定义ssh欢迎界面
-    ```
+
+   **见info**
     
     [定制网址](http://patorjk.com/software/taag/#p=display&v=3&f=3D-ASCII&t=Fuwa)
 
@@ -48,7 +40,7 @@
 （-j 后面是线程数，第一次编译推荐用单线程）
 
    ```
-   make download -j12
+   make download -j8
    find dl -size -1024c -exec ls -l {} \;
    
    #find dl -size -1024c -exec rm -f {} \; | make download
@@ -56,7 +48,7 @@
    
    make V=s -j1
    
-   #make -j$(nproc) || make -j1 || make -j1 V=s
+   make -j$(nproc) || make -j1 || make -j1 V=s
    #自信
    ```
  
